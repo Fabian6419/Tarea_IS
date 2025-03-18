@@ -58,3 +58,19 @@ cB = float(input("Ingrese la longitud del segundo cateto: "))
 
 hipotenusa = calcular_hipotenusa(cA, cB)
 print(f"La hipotenusa del triángulo es: {hipotenusa:.2f}")
+
+def numeros_naturales(n):
+    """Genera y muestra los primeros n números naturales."""
+    if n < 1:
+        print("El número debe ser mayor o igual a 1.")
+        return
+    
+    naturales = list(range(1, n + 1))
+    print("Números naturales:", naturales)
+
+# Ejemplo de uso
+try:
+    n = int(input("Ingrese un número entero positivo: "))
+    numeros_naturales(n)
+except ValueError:
+    print("Por favor, ingrese un número entero válido.")
