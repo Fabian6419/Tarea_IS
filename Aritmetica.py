@@ -74,3 +74,12 @@ try:
     numeros_naturales(n)
 except ValueError:
     print("Por favor, ingrese un número entero válido.")
+    
+def resta(a, b):
+    return a - b
+
+a = float(input("Ingrese el primer número: "))
+b = float(input("Ingrese el segundo número: "))
+
+resultado = resta(a, b)
+print("El resultado de la resta es:", resultado)
