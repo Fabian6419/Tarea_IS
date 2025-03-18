@@ -89,3 +89,8 @@ def calcular_impares(limite):
 limite = int(input("Ingrese un número límite para calcular impares: "))
 print(f"Números impares hasta {limite}: {calcular_impares(limite)}")
 
+def calcular_divisores(n):
+    return [i for i in range(1, n + 1) if n % i == 0]
+n = int(input("Ingrese un número para calcular sus divisores: "))
+print(f"Los divisores de {n} son: {calcular_divisores(n)}")
+
