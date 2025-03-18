@@ -94,3 +94,18 @@ def calcular_divisores(n):
 n = int(input("Ingrese un número para calcular sus divisores: "))
 print(f"Los divisores de {n} son: {calcular_divisores(n)}")
 
+def convertir_a_binario(n):
+    if n == 0:
+        return "0"  # Caso especial para el 0
+    binario = ""
+    while n > 0:
+        binario = str(n % 2) + binario  # Añadir el residuo al principio
+        n = n // 2  # Dividir el número por 2, descartando el residuo
+    return binario
+
+# Solicitar un número al usuario
+n = int(input("Ingresa un número decimal para convertirlo a binario: "))
+
+# Mostrar el número en binario
+print(f"El número {n} en binario es: {convertir_a_binario(n)}")
+
