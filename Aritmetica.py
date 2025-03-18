@@ -78,8 +78,14 @@ except ValueError:
 def resta(a, b):
     return a - b
 
-a = float(input("Ingrese el primer número: "))
-b = float(input("Ingrese el segundo número: "))
+a = float(input("Ingrese el primer número para restar: "))
+b = float(input("Ingrese el segundo número para restar: "))
 
 resultado = resta(a, b)
 print("El resultado de la resta es:", resultado)
+
+def calcular_impares(limite):
+    return [num for num in range(1, limite + 1) if num % 2 != 0]
+limite = int(input("Ingrese un número límite para calcular impares: "))
+print(f"Números impares hasta {limite}: {calcular_impares(limite)}")
+
