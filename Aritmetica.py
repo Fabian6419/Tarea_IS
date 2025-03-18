@@ -46,6 +46,6 @@ print(f"El valor absoluto de {num} es {valor_absoluto(num)}")
 def suma(a, b):
     return a + b
 
-a = float(input("Ingresa el primer número para la suma: "))
-b = float(input("Ingresa el segundo número para la suma: "))
+a = float(input("Ingresa el Primer número para la suma: "))
+b = float(input("Ingresa el Segundo número para la suma: "))
 print(f"La suma de {a} y {b} es {suma(a, b)}")
