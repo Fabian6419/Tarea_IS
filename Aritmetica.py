@@ -109,3 +109,14 @@ n = int(input("Ingresa un número decimal para convertirlo a binario: "))
 # Mostrar el número en binario
 print(f"El número {n} en binario es: {convertir_a_binario(n)}")
 
+def area_circulo(radio):
+    if radio < 0:
+        return "Error: El radio no puede ser negativo"
+    return math.pi * (radio ** 2)
+
+# Solicitar el radio al usuario
+try:
+    radio = float(input("Ingrese el radio del círculo para calcular su área: "))
+    print(f"El área del círculo con radio {radio} es: {area_circulo(radio):.2f}")
+except ValueError:
+    print("Error: Ingrese un número válido para el radio.")
