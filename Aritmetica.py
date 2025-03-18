@@ -17,7 +17,7 @@ def division(a, b):
 try:
     a = int(input("Ingrese el primer número para dividir: "))
     b = int(input("Ingrese el segundo númeroque divide: "))
-    resultado = modulo(a, b)
+    resultado = division(a, b)
     print("El módulo es:", resultado)
 except ValueError:
     print("Error: Ingrese solo números enteros.")
@@ -49,3 +49,12 @@ def suma(a, b):
 a = float(input("Ingresa el Primer número para la suma: "))
 b = float(input("Ingresa el Segundo número para la suma: "))
 print(f"La suma de {a} y {b} es {suma(a, b)}")
+
+def calcular_hipotenusa(c1, c2):
+    return math.sqrt(c1**2 + c2**2)
+
+cA = float(input("Ingrese la longitud del primer cateto: "))
+cB = float(input("Ingrese la longitud del segundo cateto: "))
+
+hipotenusa = calcular_hipotenusa(cA, cB)
+print(f"La hipotenusa del triángulo es: {hipotenusa:.2f}")
