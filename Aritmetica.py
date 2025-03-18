@@ -33,3 +33,6 @@ def valor_absoluto(num):
 
     numero = float(input("Ingresa un número: "))
     print(f"El valor absoluto de {numero} es {valor_absoluto(numero)}")
+    
+def suma(a, b):
+    return a + b
